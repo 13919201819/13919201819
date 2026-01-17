@@ -25,22 +25,22 @@ export default function MobileMenu() {
           </button>
 
           <nav className="mt-20 space-y-6 text-center text-white text-xl">
-            <Link href="#products" onClick={() => setOpen(false)}>
+            <Link href="/products" onClick={() => setOpen(false)}>
               Products
             </Link>
-            <Link href="#vision" onClick={() => setOpen(false)}>
+            <Link href="/vision" onClick={() => setOpen(false)}>
               Vision
             </Link>
-            <Link href="#idea" onClick={() => setOpen(false)}>
+            <Link href="/idea" onClick={() => setOpen(false)}>
               Drop Idea
             </Link>
-            <Link href="#custom" onClick={() => setOpen(false)}>
+            <Link href="/custom" onClick={() => setOpen(false)}>
               Customization
             </Link>
-            <Link href="#investors" onClick={() => setOpen(false)}>
+            <Link href="/investors" onClick={() => setOpen(false)}>
               Investors
             </Link>
-            <Link href="#contact" onClick={() => setOpen(false)}>
+            <Link href="/contact" onClick={() => setOpen(false)}>
               Contact
             </Link>
           </nav>
