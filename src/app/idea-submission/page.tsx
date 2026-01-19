@@ -499,11 +499,24 @@ export default function IdeaSubmissionPage() {
       setFileName(file.name);
       setFileType(file.type);
       
+      console.log('📎 File selected:', {
+        name: file.name,
+        type: file.type,
+        size: file.size
+      });
+      
       // Convert file to base64
       const reader = new FileReader();
       reader.onload = (event) => {
         const base64String = event.target?.result as string;
+        console.log('✅ File converted to base64');
+        console.log('📎 Base64 length:', base64String.length);
+        console.log('📎 Base64 preview:', base64String.substring(0, 50) + '...');
         setFileData(base64String);
+      };
+      reader.onerror = (error) => {
+        console.error('❌ Error reading file:', error);
+        alert('Error reading file. Please try again.');
       };
       reader.readAsDataURL(file);
     }
@@ -526,20 +539,32 @@ export default function IdeaSubmissionPage() {
     setIsSubmitting(true);
     
     try {
+      const payload = {
+        ...formData,
+        file: fileData ? {
+          name: fileName,
+          type: fileType,
+          data: fileData // base64 encoded file
+        } : null
+      };
+
+      console.log('📤 Submitting form with data:', {
+        ...formData,
+        file: fileData ? {
+          name: fileName,
+          type: fileType,
+          dataLength: fileData.length,
+          dataPreview: fileData.substring(0, 50) + '...'
+        } : null
+      });
+
       // Send data to API with complete file data
       const response = await fetch('https://connect-2-gamma.vercel.app/api/idea-submission', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({
-          ...formData,
-          file: fileData ? {
-            name: fileName,
-            type: fileType,
-            data: fileData // base64 encoded file
-          } : null
-        }),
+        body: JSON.stringify(payload),
       });
 
       const result = await response.json();
