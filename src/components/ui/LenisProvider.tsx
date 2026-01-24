@@ -11,7 +11,7 @@ export default function LenisProvider() {
         Math.min(1, 1.001 - Math.pow(2, -10 * t)), // smooth easing
       smoothWheel: true, // enable smooth mouse wheel scrolling
     };
-
+    
     const lenis = new Lenis(options);
 
     const raf = (time: number) => {
