@@ -163,7 +163,7 @@ export default function TermsAndConditionsPage() {
                 <ul className="text-gray-300 space-y-2 ml-6">
                   <li>MistrAI shall not be liable for indirect, incidental, consequential, or punitive damages</li>
                   <li>MistrAI is not responsible for failures caused by third-party APIs, ML models, or infrastructure</li>
-                  <li>MistrAI&aposs total liability shall be strictly limited to the fees paid by the customer under the applicable subscription, agreement, or contract</li>
+                  <li>MistrAI&apos;s total liability shall be strictly limited to the fees paid by the customer under the applicable subscription, agreement, or contract</li>
                 </ul>
                 <p className="text-gray-300 leading-relaxed mt-4">
                   No liability extends beyond the commercial agreement value.

@@ -101,7 +101,7 @@ export default function ProductsPage() {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-purple-400 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-purple-500"></span>
             </span>
-            <span className="text-purple-300 text-sm font-medium">Enterprise Solutions</span>
+            <span className="text-purple-300 text-sm font-medium">Customized Products</span>
           </div>
           
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight">

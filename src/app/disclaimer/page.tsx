@@ -94,7 +94,7 @@ export default function DisclaimerPage() {
                   All Services are provided as is and as available without warranties of any kind, either express or implied.
                 </p>
                 <p className="text-gray-300 leading-relaxed">
-                  Use is at the customer&aposs sole risk, subject to contractual limitations outlined in our Terms and Conditions.
+                  Use is at the customer&apos;s sole risk, subject to contractual limitations outlined in our Terms and Conditions.
                 </p>
               </div>
 
