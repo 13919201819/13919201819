@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>https://themistrai.com/</loc>
+    <lastmod>2025-12-03</lastmod>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://themistrai.com/products</loc>
+    <lastmod>2025-12-03</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://themistrai.com/strategic-partnership</loc>
+    <lastmod>2025-12-03</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://themistrai.com/customization</loc>
+    <lastmod>2025-12-03</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://themistrai.com/book-demo</loc>
+    <lastmod>2025-12-03</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://themistrai.com/capital-partners</loc>
+    <lastmod>2025-12-03</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://themistrai.com/contact</loc>
+    <lastmod>2025-12-03</lastmod>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://themistrai.com/disclaimer</loc>
+    <lastmod>2025-12-03</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://themistrai.com/privacy</loc>
+    <lastmod>2025-12-03</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://themistrai.com/terms</loc>
+    <lastmod>2025-12-03</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://themistrai.com/blogs</loc>
+    <lastmod>2025-12-03</lastmod>
+    <priority>0.5</priority>
+  </url>
+</urlset>

@@ -104,16 +104,14 @@ main {
   animation: glitter 3s infinite;
 } */
 
-
+/* 
 @import "tailwindcss";
 
 :root {
   --background: #ffffff;
-  /* --foreground: #171717; */
 }
 
 @theme inline {
-  /* --color-background: var(--background); */
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
@@ -128,6 +126,50 @@ main {
 
 html {
   overflow-x: hidden;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+@keyframes glitter {
+  0%, 100% { 
+    opacity: 0; 
+    transform: scale(0) rotate(0deg);
+  }
+  50% { 
+    opacity: 1; 
+    transform: scale(1.5) rotate(180deg);
+  }
+}
+
+.animate-glitter {
+  animation: glitter 3s infinite;
+} */
+
+
+@import "tailwindcss";
+
+/* Force dark mode always — remove media query dependency */
+:root {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+}
+
+@theme inline {
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+/* Remove or delete the prefers-color-scheme block entirely */
+
+html {
+  overflow-x: hidden;
+  color-scheme: dark;
 }
 
 body {
